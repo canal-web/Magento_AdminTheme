@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Canalweb_AdminTheme>
+            <version>1.0.0</version>
+        </Canalweb_AdminTheme>
+    </modules>
+    <global>
+        <blocks>
+            <canalweb_admintheme>
+                <class>Canalweb_AdminTheme_Block</class>
+            </canalweb_admintheme>
+        </blocks>
+        <helpers>
+            <canalweb_admintheme>
+                <class>Canalweb_AdminTheme_Helper</class>
+            </canalweb_admintheme>
+        </helpers>
+        <models>
+            <canalweb_admintheme>
+                <class>Canalweb_AdminTheme_Model</class>
+            </canalweb_admintheme>
+        </models>
+        <events>
+            <adminhtml_controller_action_predispatch_start>
+                <observers>
+                    <canalweb_admintheme_admin_predispatch>
+                        <class>Canalweb_AdminTheme_Model_Adminhtml_Observer</class>
+                        <method>setTheme</method>
+                    </canalweb_admintheme_admin_predispatch>
+                </observers>
+            </adminhtml_controller_action_predispatch_start>
+        </events>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <canalweb_admintheme before="Mage_Adminhtml">Canalweb_AdminTheme_Adminhtml</canalweb_admintheme>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <canalweb_admintheme>
+                    <file>canalweb/admintheme.xml</file>
+                </canalweb_admintheme>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Canalweb_AdminTheme>
+                    <files>
+                        <default>Canalweb_AdminTheme.csv</default>
+                    </files>
+                </Canalweb_AdminTheme>
+            </modules>
+        </translate>
+        <themes>
+            <default module="canalweb_admintheme">
+                <label>Default</label>
+            </default>
+            <magento module="canalweb_admintheme">
+                <label>Magento.com</label>
+            </magento>
+            <magento2 module="canalweb_admintheme">
+                <label>Magento 2</label>
+            </magento2>
+        </themes>
+    </adminhtml>
+    <default>
+        <canalweb_admintheme>
+            <config>
+                <theme>magento2</theme>
+            </config>
+        </canalweb_admintheme>
+    </default>
+</config>

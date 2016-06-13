@@ -1,0 +1,7 @@
+{
+    "name": "canal-web/magento-backtheme",
+    "type": "magento-module",
+    "description": "Magento module for custom Canalweb back-office theme",
+    "require": {
+    }
+}

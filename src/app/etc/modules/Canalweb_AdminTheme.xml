@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Canalweb_AdminTheme>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Canalweb_AdminTheme>
+    </modules>
+</config>
