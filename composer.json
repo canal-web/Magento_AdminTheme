@@ -1,5 +1,5 @@
 {
-    "name": "canal-web/magento-backtheme",
+    "name": "canal-web/magento-admintheme",
     "type": "magento-module",
     "description": "Magento module for custom Canalweb back-office theme",
     "require": {
