@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <config>
     <tabs>
-        <canalweb translate="label">
-            <label>Canalweb Extensions</label>
-            <sort_order>1000</sort_order>
-        </canalweb>
+        <cwtab translate="label">
+            <label>Canal Web</label>
+            <sort_order>14</sort_order>
+        </cwtab>
     </tabs>
     <sections>
         <canalweb_admintheme translate="label" module="canalweb_admintheme">
