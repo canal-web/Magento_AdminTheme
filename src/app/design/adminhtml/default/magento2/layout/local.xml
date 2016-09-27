@@ -7,4 +7,10 @@
             <action method="addItem"><type>skin_css</type><name>form.css</name></action>
         </reference>
     </default>
+    <adminhtml_system_config_edit>
+        <update handle="editor"/>
+        <reference name="head">
+            <action method="setCanLoadTinyMce"><load>1</load></action>
+        </reference>
+    </adminhtml_system_config_edit>
 </layout>
